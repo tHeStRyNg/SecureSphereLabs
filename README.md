@@ -1,6 +1,8 @@
 ### SecureSphere Labs
 #### SecureSphere Labs: A Repository of Cutting-Edge IT Security Related Tools and Analysis
 
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/1514ae25-8448-47d4-914d-2c8aede99676)
+
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/d04500c6-761e-4c0c-9942-ea2bef328f6e)
 
 Welcome to SecureSphere Labs, your go-to destination for a curated collection of powerful hacking tools designed for cybersecurity professionals, ethical hackers, and security enthusiasts alike. Our repository is meticulously maintained and regularly updated with the latest tools and utilities to enhance your penetration testing, vulnerability assessment, and digital forensics endeavors.

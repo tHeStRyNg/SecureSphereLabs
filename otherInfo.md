@@ -15,3 +15,7 @@ http://ffuf.me/
 
 Install
 ```http://ffuf.me/install```
+
+Exec
+```ffuf -w /usr/share/wordlists/dirb/common.txt -u http://telnet.htb/FUZZ -fc 403 -p2```
+

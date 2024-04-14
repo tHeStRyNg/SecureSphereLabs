@@ -17,3 +17,8 @@ root@cloud1:/opt/sqlmap# curl -X POST https://www.virustotal.com/vtapi/v2/file/s
 ```
 {"md5":"d3bb436495fa55c27609acfd8397235d","permalink":"https://www.virustotal.com/gui/file/5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200/detection/f-5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200-1713051502","positives":57,"resource":"5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200","response_code":1,"scan_date":"2024-04-13 23:38:22","scan_id":"5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200-1713051502","scans":{"ALYac":{"detected":true,"result":"Trojan.CryptZ.Marte.1.Gen","update":"20240413","version":"2.0.0.10"},"APEX":{"detected":true,"result":"Malicious","update":"20240413","version":"6.521"},"AVG":{"detected":true,"result":"Win32:SwPatch [Wrm]","update":"20240413","version":"23.
 ```
+
+### Buildig your own Antivirus based on Clamav Fork
+* https://docs.clamav.net
+* https://www.clamav.net/
+* fork --> https://github.com/Cisco-Talos/clamav

@@ -11,6 +11,7 @@ Description: Shodan gathers information about all devices directly connected to 
 
 Exec --> https://www.shodan.io
 
+Install --> ```pip3 install -U --user shodan```
 Install --> ```apt install python3-shodan```
 setup API_KEY --> ```shodan init <API_KEY>```
 search wordpress sites version 1.4.7 exploitable or linked to CVE (Common Vulnerabilities and Exposures) --> ```shodan count wordpress 1.4.7```

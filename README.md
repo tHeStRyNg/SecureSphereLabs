@@ -1,5 +1,5 @@
 ### SecureSphere Labs
-#### SecureSphere Labs: A Repository of Cutting-Edge Hacking Tools
+#### SecureSphere Labs: A Repository of Cutting-Edge IT Security Related Tools and Analysis
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/d04500c6-761e-4c0c-9942-ea2bef328f6e)
 

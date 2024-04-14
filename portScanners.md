@@ -1,6 +1,9 @@
 #### NMAP
 https://nmap.org/
 
+Install
+```apt-get install nmap -y```
+
 Example
 ```nmap -A -sS -sV -Pn <HOST> ```
 

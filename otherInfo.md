@@ -10,3 +10,8 @@ https://www.exploit-db.com
 https://owasp.org/
 
 
+#### FUFF
+http://ffuf.me/
+
+Install
+```http://ffuf.me/install```

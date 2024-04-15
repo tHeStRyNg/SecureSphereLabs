@@ -67,9 +67,9 @@ int main() {
 
 3. **Documentation and Tutorials**: Access comprehensive documentation and tutorials for each tool, enabling users of all skill levels to understand their functionality, deployment, and best practices.
 
-4. **Compatibility and Reliability**: Rest assured that all tools featured in CyberSleuth are thoroughly tested for compatibility, reliability, and security. Our team rigorously vets each submission to maintain the highest standards of quality and safety.
+4. **Compatibility and Reliability**: Rest assured that all tools featured in SecureSphere Labs are thoroughly tested for compatibility, reliability, and security. Our team rigorously vets each submission to maintain the highest standards of quality and safety.
 
-5. **Open Source Philosophy**: Embrace the spirit of open source collaboration. CyberSleuth is committed to transparency, accessibility, and the democratization of cybersecurity tools and knowledge.
+5. **Open Source Philosophy**: Embrace the spirit of open source collaboration. SecureSphere Labs is committed to transparency, accessibility, and the democratization of cybersecurity tools and knowledge.
 
 6. **Continuous Improvement**: Stay ahead of emerging threats and evolving technologies. Our team is dedicated to continuously enhancing the repository with new tools, updates, and optimizations to address the ever-changing cybersecurity landscape.
 

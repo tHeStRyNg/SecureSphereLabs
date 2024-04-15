@@ -40,8 +40,11 @@ Exec
 #### Kali NetHunter
 * https://www.kali.org
 
-#### Googl Hacking Database
+#### Google Hacking Database
 * https://www.exploit-db.com/google-hacking-database
 
 #### Metasploit Unleashed
 * https://www.offsec.com/metasploit-unleashed/
+* https://www.offsec.com/metasploit-unleashed/#metasploit-unleashed--free-ethical-hacking-course
+
+#### 

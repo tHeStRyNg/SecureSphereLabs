@@ -1,6 +1,6 @@
 ### Javascript
 
-#### Example sof Inline javascript and DOM manipulation
+#### Examples of Inline JS and DOM manipulation
 
 * DOM Manipulation XSS
 

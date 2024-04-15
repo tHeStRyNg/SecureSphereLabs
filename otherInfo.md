@@ -25,3 +25,23 @@ Exec
 #### PWNED
 * https://haveibeenpwned.com
 
+#### SleuthKit
+* The Sleuth Kit® (TSK) is a library and collection of command line tools that allow you to investigate disk images. 
+* The core functionality of TSK allows you to analyze volume and file system data. 
+* The library can be incorporated into larger digital forensics tools and the command line tools can be directly used to find evidence.
+* https://www.sleuthkit.org/
+
+#### Offensive Security
+* https://www.offsec.com/
+
+#### Kali
+* https://www.kali.org/docs/nethunter/
+
+#### Kali NetHunter
+* https://www.kali.org
+
+#### Googl Hacking Database
+* https://www.exploit-db.com/google-hacking-database
+
+#### Metasploit Unleashed
+* https://www.offsec.com/metasploit-unleashed/

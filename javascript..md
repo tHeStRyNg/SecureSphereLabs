@@ -4,5 +4,6 @@
 
 ##### Examples
 * DOM XSS
+
 ``` <iframe src="javascript:alert(`xss`)"> ```
 

@@ -4,7 +4,7 @@
 * ```https://dnsdumpster.com``` - Visual on services and diagrams of domain dependencies and addresss
 
 #### How to bypass CloudFlare Cloaking
-* ``` root@cloud1:/# curl --request GET --url https://api.securitytrails.com/v1/history/<DOMAIN_TO_CHECK>/dns/a --header 'apikey: <API_KEY>' ```
+* ``` curl --request GET --url https://api.securitytrails.com/v1/history/arogya.ch/dns/a --header 'apikey: v58x6O0BPHA3sF8Pstb29b0B-52Jui1g' ```
 
 #### Hurricane Electric Internet Services
 * https://bgp.he.net
@@ -19,3 +19,27 @@ Cybersecurity tool for gathering information on the attack surface of targets in
 
 Instalation
 * ```snap install amass```
+
+
+* Dns Enumeration
+Maltego
+dnenum
+recon-ng
+dnsrecon
+theHarvester
+nslookup
+dig
+
+* Network utility tools:
+
+Dig
+nslookup
+ping
+host
+finger
+traceroute
+netstat
+tracepath
+hostname
+route
+whois

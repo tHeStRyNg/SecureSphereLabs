@@ -5,7 +5,7 @@
 
 Welcome to SecureSphere Labs, your go-to destination for a curated collection of powerful hacking tools designed for cybersecurity professionals, ethical hackers, and security enthusiasts alike. Our repository is meticulously maintained and regularly updated with the latest tools and utilities to enhance your penetration testing, vulnerability assessment, and digital forensics endeavors.
 
-QUOTE - H.F.
+Quote - H.F.
 "The human mind is a reflection instanciated from this class."
 
 ```

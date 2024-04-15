@@ -11,3 +11,5 @@ A disassembler is a computer program that translates machine language into assem
 #### IDA
 - https://hex-rays.com/ida-free
 - https://hex-rays.com/ida-pro
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/bfdad09f-566e-4561-b0c0-85fbf5522341)

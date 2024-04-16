@@ -11,7 +11,7 @@ Slow Down Port Scan
 
 ```nmap -A -sS -sV -Pn -T[1-5] <HOST>```
 
-nmap 10.129.235.0/24 -F --initial-rtt-timeout 50ms --max-rtt-timeout 100ms
+``` nmap 10.129.235.0/24 -F --initial-rtt-timeout 50ms --max-rtt-timeout 100ms
 nmap --script banner -n -Pn 10.129.235.167 -p80  --disable-arp-pin
 nmap 10.129.235.167 -p 31337 -sV --script vuln
 nmap 10.129.235.167 -p 80 -sV --script vulnStarting Nmap 7.80 ( https://nmap.org ) at 2024-04-16 13:02 UTC
@@ -50,11 +50,11 @@ PORT   STATE SERVICE VERSION
 |       EDB-ID:50446    7.5     https://vulners.com/exploitdb/EDB-ID:50446      *EXPLOIT*
 |       EDB-ID:50406    7.5     https://vulners.com/exploitdb/EDB-ID:50406      *EXPLOIT*
 |       E796A40A-8A8E-59D1-93FB-78EF4D8B7FA6    7.5     https://vulners.com/githubexploit/E796A40A-8A8E-59D1-93FB-78EF4D8B7FA6  *EXPLOIT*
-
+```
 ### Firewall and IDS/IPS Evasion
 
 #### SYN-Scan
-tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p 21,22,25 -sS -Pn -n --disable-arp-ping --packet-trace
+```tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p 21,22,25 -sS -Pn -n --disable-arp-ping --packet-trace
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-21 14:56 CEST
 SENT (0.0278s) TCP 10.10.14.2:57347 > 10.129.2.28:22 S ttl=53 id=22412 iplen=44  seq=4092255222 win=1024 <mss 1460>
@@ -74,10 +74,10 @@ PORT   STATE    SERVICE
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
-
+```
 #### ACK-Scan
 
-tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p 21,22,25 -sA -Pn -n --disable-arp-ping --packet-trace
+```tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p 21,22,25 -sA -Pn -n --disable-arp-ping --packet-trace
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-21 14:57 CEST
 SENT (0.0422s) TCP 10.10.14.2:49343 > 10.129.2.28:21 A ttl=49 id=12381 iplen=40  seq=0 win=1024
@@ -96,7 +96,7 @@ PORT   STATE      SERVICE
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
-
+```
 #### Detect IDS/IPS
 Unlike firewalls and their rules, the detection of IDS/IPS systems is much more difficult because these are passive traffic monitoring systems. IDS systems examine all connections between hosts. If the IDS finds packets containing the defined contents or specifications, the administrator is notified and takes appropriate action in the worst case.
 
@@ -111,7 +111,7 @@ One method to determine whether such IPS system is present in the target network
 Consequently, we know that we need to be quieter with our scans and, in the best case, disguise all interactions with the target network and its services.
 
 #### Decoys
-
+```
 tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p 80 -sS -Pn -n --disable-arp-ping --packet-trace -D RND:5
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-21 16:14 CEST
@@ -130,9 +130,9 @@ PORT   STATE SERVICE
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
-
+```
 #### Testing Firewall Rule
-
+```
 tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -n -Pn -p445 -O
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-22 01:23 CEST
@@ -147,9 +147,9 @@ Network Distance: 1 hop
 
 OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 3.14 seconds
-
+```
 #### Scan by Using Different Source IP
-
+```
 tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -n -Pn -p 445 -O -S 10.129.2.200 -e tun0
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-22 01:16 CEST
@@ -166,11 +166,11 @@ Network Distance: 1 hop
 
 OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 4.11 seconds
-
+```
 ### DNS Proxying
 
 #### SYN-Scan of a Filtered Port
-
+```
 tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-21 22:50 CEST
@@ -183,9 +183,9 @@ PORT      STATE    SERVICE
 50000/tcp filtered ibm-db2
 
 Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
-
+```
 #### SYN-Scan From DNS Port
-
+```
 tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace --source-port 53
 
 SENT (0.0482s) TCP 10.10.14.2:53 > 10.129.2.28:50000 S ttl=58 id=27470 iplen=44  seq=4003923435 win=1024 <mss 1460>
@@ -198,13 +198,13 @@ PORT      STATE SERVICE
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
-
+```
 #### Connect To The Filtered Port
-
+```
 tHeStRyNg@htb[/htb]$ ncat -nv --source-port 53 10.129.2.28 50000
 
 Ncat: Version 7.80 ( https://nmap.org/ncat )
 Ncat: Connected to 10.129.2.28:50000.
 220 ProFTPd
-
-^_^
+```
+* ^_^

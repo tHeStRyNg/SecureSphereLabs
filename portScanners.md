@@ -171,7 +171,7 @@ Nmap done: 1 IP address (1 host up) scanned in 4.11 seconds
 
 #### SYN-Scan of a Filtered Port
 ```
-tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace
+tHeStRyNg@htb[/htb]$ sudo nmap 10.129.187.230 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-21 22:50 CEST
 SENT (0.0417s) TCP 10.10.14.2:33436 > 10.129.2.28:50000 S ttl=41 id=21939 iplen=44  seq=736533153 win=1024 <mss 1460>
@@ -186,7 +186,7 @@ Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
 ```
 #### SYN-Scan From DNS Port
 ```
-tHeStRyNg@htb[/htb]$ sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace --source-port 53
+tHeStRyNg@htb[/htb]$ sudo nmap 10.129.187.230 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace --source-port 53
 
 SENT (0.0482s) TCP 10.10.14.2:53 > 10.129.2.28:50000 S ttl=58 id=27470 iplen=44  seq=4003923435 win=1024 <mss 1460>
 RCVD (0.0608s) TCP 10.129.2.28:50000 > 10.10.14.2:53 SA ttl=64 id=0 iplen=44  seq=540635485 win=64240 <mss 1460>
@@ -208,3 +208,16 @@ Ncat: Connected to 10.129.2.28:50000.
 220 ProFTPd
 ```
 * ^_^
+
+#### Other
+```
+curl https://www.inlanefreight.com/ | grep -Po "https://www.inlanefreight.com/[^'\"]*" | sort -u | wc -l
+
+nmap -sC -sV -Pn 10.10.10.11
+```
+* https://lelinhtinh.github.io/de4js/
+* https://rot13.com/
+* https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
+* https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server
+* https://learn.microsoft.com/en-us/troubleshoot/windows-server/windows-security/seimpersonateprivilege-secreateglobalprivilege
+* https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/juicypotato

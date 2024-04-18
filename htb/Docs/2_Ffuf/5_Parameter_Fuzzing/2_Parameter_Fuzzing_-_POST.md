@@ -16,3 +16,6 @@ So, let us repeat what we did earlier, but place our FUZZ keyword after the -d f
 As we can see this time, we got a couple of hits, the same one we got when fuzzing GET and another parameter, which is id. Let's see what we get if we send a POST request with the id parameter. We can do that with curl, as follows:
 
 
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/008b8dd8-26b2-44c4-9ec3-8e6ed94e6bc3)
+
+As we can see, the message now says Invalid id!.

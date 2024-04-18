@@ -34,7 +34,7 @@ To determine which pages exist, we should have a wordlist containing commonly us
 
 We will not have to reinvent the wheel by manually creating these wordlists, as great efforts have been made to search the web and determine the most commonly used words for each type of fuzzing. Some of the most commonly used wordlists can be found under the GitHub SecLists repository --> https://github.com/danielmiessler/SecLists, which categorizes wordlists under various types of fuzzing, even including commonly used passwords, which we'll later utilize for Password Brute Forcing.
 
-Within our PwnBox, we can find the entire SecLists repo available under /opt/useful/SecLists. The specific wordlist we will be utilizing for pages and directory fuzzing is another commonly used wordlist called directory-list-2.3, and it is available in various forms and sizes. We can find the one we will be using under:
+Within our PwnBox, we can find the entire SecLists repo available under ```/opt/useful/SecLists```. The specific wordlist we will be utilizing for pages and directory fuzzing is another commonly used wordlist called ```directory-list-2.3```, and it is available in various forms and sizes. We can find the one we will be using under:
 
 ```
 tHeStRyNg@htb[/htb]$ locate directory-list-2.3-small.txt
@@ -43,4 +43,4 @@ tHeStRyNg@htb[/htb]$ locate directory-list-2.3-small.txt
 ```
 
 * Tip: Taking a look at this wordlist we will notice that it contains copyright comments at the beginning, which can be considered as part of the wordlist and clutter the results. 
-       We can use the following in ffuf to get rid of these lines with the -ic flag.
+       We can use the following in ffuf to get rid of these lines with the ```-ic``` flag.

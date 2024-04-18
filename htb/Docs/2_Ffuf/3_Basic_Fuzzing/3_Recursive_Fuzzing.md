@@ -19,5 +19,10 @@ If we specify ```-recursion-depth 1```, it will only fuzz the main directories a
 
 If any sub-sub-directories are identified (like ```/login/user```, it will not fuzz them for pages). When using recursion in ffuf, we can specify our extension with ```-e .php```
 
-* Note: we can still use `.php` as our page extension, as these extensions are usually site-wide.
+* Note: we can still use ```.php``` as our page extension, as these extensions are usually site-wide.
 
+Finally, we will also add the flag ```-v``` to output the full URLs. Otherwise, it may be difficult to tell which ```.php``` file lies under which directory.
+
+#### Recursive Scanning
+
+Let us repeat the first command we used, add the recursion flags to it while specifying ```.php``` as our extension, and see what results we get:

@@ -25,3 +25,12 @@ As for our target, we will use ```inlanefreight.com``` as our target and run our
 
 Let us use ```ffuf``` and place the ```FUZZ``` keyword in the place of sub-domains, and see if we get any hits:
 
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/20f34bf9-ea60-4c65-aa7d-a2b02f05c89e)
+
+We see that we do get a few hits back. Now, we can try running the same thing on academy.htb and see if we get any hits back:
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/1eac6787-21e9-4741-b7b1-cb65ed8d61d5)
+
+We see that we do not get any hits back. Does this mean that there are no sub-domain under academy.htb? - No.
+
+This means that there are no public sub-domains under academy.htb, as it does not have a public DNS record, as previously mentioned. Even though we did add academy.htb to our /etc/hosts file, we only added the main domain, so when ffuf is looking for other sub-domains, it will not find them in /etc/hosts, and will ask the public DNS, which obviously will not have them.

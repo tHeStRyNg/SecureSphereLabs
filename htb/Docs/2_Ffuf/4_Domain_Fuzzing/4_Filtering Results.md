@@ -68,10 +68,14 @@ We can verify that by visiting the page, and seeing if we can connect to it:
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/204bf7e9-9d50-40b8-bb32-f2119c9c68d0)
 
-* Note 1: Don't forget to add "admin.academy.htb" to "/etc/hosts".
+* Note 1: Don't forget to add ```admin.academy.htb``` to ```/etc/hosts```.
 * Note 2: If your exercise has been restarted, ensure you still have the correct port when visiting the website.
 
-We see that we can access the page, but we get an empty page, unlike what we got with academy.htb, therefore confirming this is indeed a different VHost. We can even visit https://admin.academy.htb:PORT/blog/index.php, and we will see that we would get a 404 PAGE NOT FOUND, confirming that we are now indeed on a different VHost.
+We see that we can access the page, but we get an empty page, unlike what we got with ```academy.htb```, therefore confirming this is indeed a different VHost. 
 
-Try running a recursive scan on admin.academy.htb, and see what pages you can identify.
+We can even visit ```https://admin.academy.htb:PORT/blog/index.php```, and we will see that we would get a ```404 PAGE NOT FOUND```, confirming that we are now indeed on a different VHost.
+
+Try running a recursive scan on ```admin.academy.htb```, and see what pages you can identify.
+
+
 

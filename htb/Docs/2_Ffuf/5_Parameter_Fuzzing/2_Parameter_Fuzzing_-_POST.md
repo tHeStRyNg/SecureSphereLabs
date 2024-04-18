@@ -1,0 +1,15 @@
+### Parameter Fuzzing - POST
+
+The main difference between POST requests and GET requests is that POST requests are not passed with the URL and cannot simply be appended after a ? symbol. POST requests are passed in the data field within the HTTP request. Check out the Web Requests module to learn more about HTTP requests.
+
+To fuzz the data field with ffuf, we can use the -d flag, as we saw previously in the output of ffuf -h. We also have to add -X POST to send POST requests.
+
+```
+Tip: In PHP, "POST" data "content-type" can only accept "application/x-www-form-urlencoded". So, we can set that in "ffuf" with "-H 'Content-Type: application/x-www-form-urlencoded'".
+```
+
+So, let us repeat what we did earlier, but place our FUZZ keyword after the -d flag:
+
+```
+
+```

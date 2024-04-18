@@ -2,7 +2,7 @@
 
 If we run a recursive ```ffuf``` scan on ```admin.academy.htb```, we should find ```http://admin.academy.htb:PORT/admin/admin.php```. If we try accessing this page, we see the following:
 
-XXXXXXXXXX
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/a5e5b383-0ded-4278-a7e9-c83164499c6e)
 
 That indicates that there must be something that identifies users to verify whether they have access to read the flag. 
 
@@ -61,6 +61,8 @@ ________________________________________________
 <...SNIP...>                    [Status: xxx, Size: xxx, Words: xxx, Lines: xxx]
 ```
 
-We do get a hit back. Let us try to visit the page and add this GET parameter, and see whether we can read the flag now:
+We do get a hit back. Let us try to visit the page and add this ```GET``` parameter, and see whether we can read the flag now:
 
-XXXXXX
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/916017e3-3809-410e-ba16-710618aa2ce7)
+
+As we can see, the only hit we got back has been ```deprecated``` and appears to be no longer in use.

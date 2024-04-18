@@ -26,3 +26,4 @@ Finally, we will also add the flag ```-v``` to output the full URLs. Otherwise, 
 #### Recursive Scanning
 
 Let us repeat the first command we used, add the recursion flags to it while specifying ```.php``` as our extension, and see what results we get:
+

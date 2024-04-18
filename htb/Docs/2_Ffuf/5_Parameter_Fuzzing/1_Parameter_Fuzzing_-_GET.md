@@ -70,5 +70,10 @@ We do get a hit back. Let us try to visit the page and add this ```GET``` parame
 
 As we can see, the only hit we got back has been ```deprecated``` and appears to be no longer in use.
 
+For the below example we had to add the ```admin.DOMAIN``` to the ```/etc/hosts``` as follows:
+
+```$sudo sh -c ‘echo “SERVER_IP admin.academy.htb” >> /etc/hosts’```
+
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/0a9d45d3-8342-4411-8e17-bb352be1cd13)
+
 

@@ -13,11 +13,11 @@ In this module, we will cover:
 * Fuzzing for parameter values
 
 * CREST CPSA/CRT-related Sections:
- - All sections
+  All sections
 * CREST CCT APP-related Sections:
- - All sections
+  All sections
 * CREST CCT INF-related Sections:
- - All sections
+  All sections
 
 This module is broken down into sections with accompanying hands-on exercises to practice each of the tactics and techniques we cover. The module ends with a practical hands-on skills assessment to gauge your understanding of the various topic areas.
 

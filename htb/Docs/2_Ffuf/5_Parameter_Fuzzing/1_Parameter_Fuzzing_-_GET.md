@@ -69,3 +69,6 @@ We do get a hit back. Let us try to visit the page and add this ```GET``` parame
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/916017e3-3809-410e-ba16-710618aa2ce7)
 
 As we can see, the only hit we got back has been ```deprecated``` and appears to be no longer in use.
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/0a9d45d3-8342-4411-8e17-bb352be1cd13)
+

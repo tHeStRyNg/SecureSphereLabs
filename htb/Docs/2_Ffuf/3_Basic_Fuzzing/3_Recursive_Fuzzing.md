@@ -29,6 +29,11 @@ Let us repeat the first command we used, add the recursion flags to it while spe
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/c8e6e1e9-9479-4dfe-80b9-bc71e9910b19)
 
-As we can see this time, the scan took much longer, sent almost six times the number of requests, and the wordlist doubled in size (once with .php and once without). 
+As we can see this time, the scan took much longer, sent almost six times the number of requests, and the wordlist doubled in size (once with ```.php``` and once without). 
 
 Still, we got a large number of results, including all the results we previously identified, all with a single line of command.
+
+#### Questions
+
+Try to repeat what you learned so far to find more files/directories. One of them should give you a flag. What is the content of the flag?
+

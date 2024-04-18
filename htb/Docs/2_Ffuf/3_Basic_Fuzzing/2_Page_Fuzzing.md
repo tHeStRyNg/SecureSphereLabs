@@ -28,3 +28,11 @@ Now, we can rerun our command, carefully placing our ```FUZZ``` keyword where th
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/27a3351b-26e5-4e87-bd17-c7d0e588859b)
 
+We do get a couple of hits, but only ```.php``` which gives us a response with code 200. 
+
+Great! We now know that this website runs on PHP to start fuzzing for PHP files.
+
+#### Page Fuzzing
+
+We will now use the same concept of keywords we've been using with ```ffuf```, use ```.php``` as the extension, place our ```FUZZ``` keyword where the filename should be, and use the same wordlist we used for fuzzing directories:
+

@@ -25,7 +25,7 @@ As for our target, we will use ```inlanefreight.com``` as our target and run our
 
 Let us use ```ffuf``` and place the ```FUZZ``` keyword in the place of sub-domains, and see if we get any hits:
 
-![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/20f34bf9-ea60-4c65-aa7d-a2b02f05c89e)
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/43e4b105-a666-4713-b828-84acb5ec67d4)
 
 We see that we do get a few hits back. Now, we can try running the same thing on ```academy.htb``` and see if we get any hits back:
 

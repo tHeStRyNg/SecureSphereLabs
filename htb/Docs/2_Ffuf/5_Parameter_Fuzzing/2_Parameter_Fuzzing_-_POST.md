@@ -10,6 +10,9 @@ Tip: In PHP, "POST" data "content-type" can only accept "application/x-www-form-
 
 So, let us repeat what we did earlier, but place our FUZZ keyword after the -d flag:
 
-```
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/c6fc3837-e773-45b1-90f8-48b45cb64e35)
 
-```
+
+As we can see this time, we got a couple of hits, the same one we got when fuzzing GET and another parameter, which is id. Let's see what we get if we send a POST request with the id parameter. We can do that with curl, as follows:
+
+

@@ -39,3 +39,6 @@ We will now use the same concept of keywords we've been using with ```ffuf```, u
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/df00ea39-2c47-49bd-918b-5a1e0fdb9894)
 
 We get a couple of hits; both have an ```HTTP code 200```, meaning we can access them. ```index.php``` has a size of 0, indicating that it is an empty page, while the other does not, which means that it has content. We can visit any of these pages to verify this:
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/bdd0fbe1-c20f-4929-9ee8-dde589a5a60a)
+

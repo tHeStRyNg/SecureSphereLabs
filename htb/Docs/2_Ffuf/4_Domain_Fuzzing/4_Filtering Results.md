@@ -34,7 +34,7 @@ We know the response size of the incorrect results, which, as seen from the test
 Now, let's repeat the same previous command, add the above flag, and see what we get:
 
 ```
-tHeStRyNg@htb[/htb]$ ffuf -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ -u http://academy.htb:PORT/ -H 'Host: FUZZ.academy.htb' -fs 900
+tHeStRyNg@htb[/htb]$ ffuf -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ -u http://academy.htb:PORT/ -H 'Host: FUZZ.academy.htb' -fs 986
 
 
        /'___\  /'___\           /'___\       
@@ -77,3 +77,24 @@ We can even visit ```https://admin.academy.htb:PORT/blog/index.php```, and we wi
 
 Try running a recursive scan on ```admin.academy.htb```, and see what pages you can identify.
 
+<<<<<<< HEAD
+=======
+#### Questions
+
+Try running a VHost fuzzing scan on 'academy.htb', and see what other VHosts you get. What other VHosts did you get?
+
+* So we add the target Ip on the hosts file as follows
+```
+root@cloud1:/opt/repos/SecLists/Discovery/DNS# cat /etc/hosts|grep academy
+94.237.53.3 academy.htb
+```
+And we run the ffuf. Notice one important paramenter mainly on ```-fs``` which translates t the size of the GET request.
+All 200 http codes are comming with size of 986 as follows:
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/c3362133-0ef0-4882-9bcf-b1206ac61ef7)
+
+So what we want is to similar ```grep -v 986``` or show us all that is not 986 as follows:
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/45dd61a1-c420-4c38-8e7b-04c0b0dac8b7)
+
+>>>>>>> c558517184864ee6489609f1166d22befebc9811

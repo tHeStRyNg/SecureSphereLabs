@@ -32,3 +32,5 @@ A firm grasp of the following modules can be considered prerequisites for succes
 Introduction to Networking
 Linux Fundamentals
 Web Requests
+
+https://medium.com/@WriteupsTHM_HTB_CTF/attacking-web-applications-with-ffuf-c8e04d2d6466

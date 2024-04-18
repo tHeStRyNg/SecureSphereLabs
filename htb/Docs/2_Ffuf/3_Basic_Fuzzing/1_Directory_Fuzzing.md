@@ -102,5 +102,10 @@ We do get a couple of hits, and we can visit one of them to verify that it exist
 
 We get an empty page, indicating that the directory does not have a dedicated page, but also shows that we do have access to it, as we do not get an HTTP code 404 Not Found or 403 Access Denied. In the next section, we will look for pages under this directory to see whether it is really empty or has hidden files and pages.
 
+#### Questions
+
+* In addition to the directory we found above, there is another directory that can be found. What is it?
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/950ffb9a-2de1-418d-945c-75e74d476b2d)
 
 

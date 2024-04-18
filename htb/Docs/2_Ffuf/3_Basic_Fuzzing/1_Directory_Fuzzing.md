@@ -62,7 +62,7 @@ Next, as we want to be fuzzing for web directories, we can place the FUZZ keywor
 
 Now, let's start our target in the question below and run our final command on it:
 
-![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/e30f4e92-917b-4f87-87cd-66260b04f3d6)
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/4c1705e0-18bd-49de-96ae-17bc558a0f5e)
 
 We see that ffuf tested for almost 90k URLs in less than 10 seconds. 
 

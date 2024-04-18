@@ -37,3 +37,4 @@ Still, we got a large number of results, including all the results we previously
 
 Try to repeat what you learned so far to find more files/directories. One of them should give you a flag. What is the content of the flag?
 
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/77a4927e-4e26-4fdf-82d3-a2d002121adb)

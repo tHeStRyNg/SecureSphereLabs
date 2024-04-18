@@ -36,3 +36,4 @@ Great! We now know that this website runs on PHP to start fuzzing for PHP files.
 
 We will now use the same concept of keywords we've been using with ```ffuf```, use ```.php``` as the extension, place our ```FUZZ``` keyword where the filename should be, and use the same wordlist we used for fuzzing directories:
 
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/df00ea39-2c47-49bd-918b-5a1e0fdb9894)

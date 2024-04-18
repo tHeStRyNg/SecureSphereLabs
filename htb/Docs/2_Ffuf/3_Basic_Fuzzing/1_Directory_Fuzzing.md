@@ -62,34 +62,7 @@ Next, as we want to be fuzzing for web directories, we can place the FUZZ keywor
 
 Now, let's start our target in the question below and run our final command on it:
 
-```
-tHeStRyNg@htb[/htb]$ ffuf -w /opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ
-
-
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
-
-       v1.1.0-git
-________________________________________________
-
- :: Method           : GET
- :: URL              : http://SERVER_IP:PORT/FUZZ
- :: Wordlist         : FUZZ: /opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 40
- :: Matcher          : Response status: 200,204,301,302,307,401,403
-________________________________________________
-
-<SNIP>
-blog                    [Status: 301, Size: 326, Words: 20, Lines: 10]
-:: Progress: [87651/87651] :: Job [1/1] :: 9739 req/sec :: Duration: [0:00:09] :: Errors: 0 ::
-```
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/e30f4e92-917b-4f87-87cd-66260b04f3d6)
 
 We see that ffuf tested for almost 90k URLs in less than 10 seconds. 
 

@@ -23,6 +23,24 @@ However, if we visit a page that exists, like /login, we would get the login pag
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/32132f17-62da-4cec-8fb3-9ade8cc7577b)
 
-This is the basic idea behind web fuzzing for pages and directories. Still, we cannot do this manually, as it will take forever. This is why we have tools that do this automatically, efficiently, and very quickly. Such tools send hundreds of requests every second, study the response HTTP code, and determine whether the page exists or not. Thus, we can quickly determine what pages exist and then manually examine them to see their content.
+This is the basic idea behind web fuzzing for pages and directories. Still, we cannot do this manually, as it will take forever. 
 
+This is why we have tools that do this automatically, efficiently, and very quickly. Such tools send hundreds of requests every second, study the response HTTP code, and determine whether the page exists or not. 
 
+Thus, we can quickly determine what pages exist and then manually examine them to see their content.
+
+### Wordlists
+To determine which pages exist, we should have a wordlist containing commonly used words for web directories and pages, very similar to a Password Dictionary Attack, which we will discuss later in the module. Though this will not reveal all pages under a specific website, as some pages are randomly named or use unique names, in general, this returns the majority of pages, reaching up to 90% success rate on some websites.
+
+We will not have to reinvent the wheel by manually creating these wordlists, as great efforts have been made to search the web and determine the most commonly used words for each type of fuzzing. Some of the most commonly used wordlists can be found under the GitHub SecLists repository --> https://github.com/danielmiessler/SecLists, which categorizes wordlists under various types of fuzzing, even including commonly used passwords, which we'll later utilize for Password Brute Forcing.
+
+Within our PwnBox, we can find the entire SecLists repo available under /opt/useful/SecLists. The specific wordlist we will be utilizing for pages and directory fuzzing is another commonly used wordlist called directory-list-2.3, and it is available in various forms and sizes. We can find the one we will be using under:
+
+```
+tHeStRyNg@htb[/htb]$ locate directory-list-2.3-small.txt
+
+/opt/useful/SecLists/Discovery/Web-Content/directory-list-2.3-small.txt
+```
+
+* Tip: Taking a look at this wordlist we will notice that it contains copyright comments at the beginning, which can be considered as part of the wordlist and clutter the results. 
+       We can use the following in ffuf to get rid of these lines with the -ic flag.

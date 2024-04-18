@@ -77,5 +77,3 @@ We can even visit ```https://admin.academy.htb:PORT/blog/index.php```, and we wi
 
 Try running a recursive scan on ```admin.academy.htb```, and see what pages you can identify.
 
-
-

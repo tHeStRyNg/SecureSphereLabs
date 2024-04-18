@@ -37,7 +37,3 @@ This means that there are no public sub-domains under academy.htb, as it does no
 
 Even though we did add ```academy.htb``` to our ```/etc/hosts``` file, we only added the main domain, so when ffuf is looking for other sub-domains, it will not find them in ```/etc/hosts```, and will ask the public DNS, which obviously will not have them.
 
-#### Questions
-
-Try running a sub-domain fuzzing test on 'inlanefreight.com' to find a customer sub-domain portal. What is the full domain of it?
-

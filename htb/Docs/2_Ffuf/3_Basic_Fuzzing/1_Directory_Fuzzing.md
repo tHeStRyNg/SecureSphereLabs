@@ -79,6 +79,7 @@ We get an empty page, indicating that the directory does not have a dedicated pa
 
 * In addition to the directory we found above, there is another directory that can be found. What is it?
 
-![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/950ffb9a-2de1-418d-945c-75e74d476b2d)
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/861bd973-2fb9-4ad9-aa65-822c3b9e7b72)
+
 
 

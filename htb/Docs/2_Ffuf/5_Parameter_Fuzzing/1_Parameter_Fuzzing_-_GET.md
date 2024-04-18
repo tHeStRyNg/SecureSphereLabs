@@ -76,4 +76,16 @@ For the below example we had to add the ```admin.DOMAIN``` to the ```/etc/hosts`
 
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/0a9d45d3-8342-4411-8e17-bb352be1cd13)
 
+#### Nutshell
+
+* First we get the size value
+```
+$ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ -u http://admin.academy.htb:PORT/admin/admin.php?FUZZ=key
+```
+
+Then whatever value is default we exclude with ```-fs VALUE_OBTAINED```
+
+```
+$ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ -u http://admin.academy.htb:PORT/admin/admin.php?FUZZ=key -fs xxx
+```
 

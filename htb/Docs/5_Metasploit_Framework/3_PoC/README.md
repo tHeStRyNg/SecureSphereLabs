@@ -1,5 +1,10 @@
 ### PoC - Proof of Concept
 
+Scope - Methodology
+
+![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/ae04f097-254c-492d-b62c-feb17433a134)
+
+
 1
 ![image](https://github.com/tHeStRyNg/SecureSphereLabs/assets/118682909/b9a14e74-d882-4ad9-ad23-178eddd29ab3)
 

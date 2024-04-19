@@ -40,3 +40,6 @@ Untar the file
 
 Cat file and pass it to json beautifier or just use vscode but each line corresponds to data regarding each found host
 With the particular vulnerability corresponding to wordpress 1.4.7
+
+#### HTTP Status Codes
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401

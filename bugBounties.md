@@ -1,6 +1,6 @@
 #### Bug Bounties
 
-* https://hackerone.com
+* https://hackerone.com -v 
 - https://hackerone.com/opportunities/all/search?ordering=Newest+programs
 * https://www.bugcrowd.com
 * https://picoctf.org

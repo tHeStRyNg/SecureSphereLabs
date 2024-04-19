@@ -47,4 +47,9 @@ Exec
 * https://www.offsec.com/metasploit-unleashed/
 * https://www.offsec.com/metasploit-unleashed/#metasploit-unleashed--free-ethical-hacking-course
 
-#### 
+#### OSINT Tools, Ressources and Data Sources
+Shodan - The Search Engine for the Internet of Things, find everything from Printers to Power Stations with this Internet Wide Scanning Resource.
+scans.io - A excellent collection of open scan data and DNS resources sponsored by Rapid7 and the University of Michigan.
+Recon-NG - A tool for collecting Open Source Intelligence from various resources and search engines.
+Passive OSINT Analysis of the Network Attack Surface - An article of ours that gives an overview of the discovery of the attack surface of an organization.
+IP Tools - another resource of ours, a collection of DNS and IP Tools that enable target reconnaissance.

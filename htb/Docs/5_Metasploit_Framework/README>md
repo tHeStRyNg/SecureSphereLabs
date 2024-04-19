@@ -1,7 +1,7 @@
 ### Module Summary
 This module introduces the fundamentals of the Metasploit Framework with a retrospective analysis of the usage of automated tools in today's penetration testing environments. Despite the industry debates revolving around the level of security knowledge needed to operate a swiss army knife type tool such as Metasploit, frameworks such as this allow for in-depth exploration and auditing for which one might not have the necessary time given different circumstances. In this module, we will cover:
 
-A preface about using tools
+* A preface about using tools
 * An overview of the Metasploit Framework
 * Metasploit module types
 * Setting targets and payloads

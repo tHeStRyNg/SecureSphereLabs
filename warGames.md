@@ -2,6 +2,7 @@
 
 * https://hackthissite.org/
 * http://ceh.algorithmic.one/
+* https://ctf.hacker101.com/
 
 #### OverTheWire Collection
 * https://overthewire.org/wargames/
@@ -19,18 +20,13 @@
 * https://overthewire.org/wargames/formulaone/
 
 #### HackTheBox
-https://hackthebox.com
-https://academy.hackthebox.com/login
+* https://hackthebox.com
+* https://app.hackthebox.com/login # Machines
 
-###  Use NSE and its scripts to find the flag that one of the services contain and submit it as the answer.
+#### Hacker101
+* https://ctf.hacker101.com
+* https://www.hacker101.com/
 
-### 22/tcp    open  ssh
-### 80/tcp    open  http
-### 110/tcp   open  pop3
-### 139/tcp   open  netbios-ssn
-### 143/tcp   open  imap
-### 445/tcp   open  microsoft-ds
-### 31337/tcp open  Elite
 
 ``` nmap 10.129.235.167 -p 80 -sV --script vuln ``` 
 

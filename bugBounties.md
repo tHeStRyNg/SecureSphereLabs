@@ -8,5 +8,5 @@
 * https://www.hacker101.com
 * https://www.synack.com
 * https://www.cobalt.io
-* https://www.yogosha.com
+* https://www.yogosha.com -v
 * https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html 

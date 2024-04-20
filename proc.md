@@ -159,3 +159,13 @@ This command performs two operations:
 2. `fg`: This command brings the most recently suspended job into the foreground. If no job is specified, it brings the current job into the foreground. This is typically used to resume a suspended process.
 
 So, when you execute this command, it configures the terminal to operate in raw mode without echoing, and then brings the most recently suspended job (if any) into the foreground. This is often used in combination with the Python command (`import pty;pty.spawn("/bin/bash")`) to enhance the interactivity and usability of the spawned Bash shell.
+
+then as final step 
+
+```export TERM=xterm```
+
+Setting `TERM=xterm` is used to define the terminal type or emulation. The `TERM` environment variable specifies the type of terminal that the shell should emulate. 
+
+In this case, `xterm` is a widely supported terminal emulation, often used in Unix-like operating systems. Setting `TERM=xterm` tells programs running in the shell to use the characteristics of the xterm terminal emulator.
+
+This setting can be useful for ensuring compatibility with programs that rely on specific terminal features or behaviors. It's commonly used when interacting with remote systems or when running terminal-based applications that require a particular terminal type to function correctly.

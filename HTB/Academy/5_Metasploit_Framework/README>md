@@ -1,0 +1,31 @@
+### Module Summary
+This module introduces the fundamentals of the Metasploit Framework with a retrospective analysis of the usage of automated tools in today's penetration testing environments. Despite the industry debates revolving around the level of security knowledge needed to operate a swiss army knife type tool such as Metasploit, frameworks such as this allow for in-depth exploration and auditing for which one might not have the necessary time given different circumstances. In this module, we will cover:
+
+* A preface about using tools
+* An overview of the Metasploit Framework
+* Metasploit module types
+* Setting targets and payloads
+* Pivoting between sessions and jobs
+* Importing new modules
+* Creating a custom payload
+* Creating a custom module
+* Using Meterpreter and Kiwi
+
+* CREST CPSA/CRT-related Sections: All sections
+* CREST CCT APP-related Sections: All sections
+* CREST CCT INF-related Sections: All sections
+
+This module is broken down into sections with accompanying hands-on exercises to practice each of the tactics and techniques we cover. The module ends with a practical hands-on skills assessment to gauge your understanding of the various topic areas.
+
+As you work through the module, you will see example commands and command output for the various topics introduced. It is worth reproducing as many of these examples as possible to reinforce further the concepts presented in each section. You can do this in the Pwnbox provided in the interactive sections or your virtual machine.
+
+You can start and stop the module at any time and pick up where you left off. There is no time limit or "grading," but you must complete all of the exercises and the skills assessment to receive the maximum number of cubes and have this module marked as complete in any paths you have chosen.
+
+The module is classified as "Easy" but assumes a working knowledge of the Linux command line and an understanding of information security fundamentals.
+
+A firm grasp of the following modules can be considered prerequisites for successful completion of this module:
+
+* Networking Fundamentals
+* Linux Fundamentals
+* Web Requests
+* Network Enumeration with Nmap

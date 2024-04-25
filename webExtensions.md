@@ -1,13 +1,18 @@
-## TruffleHog
+## WebExtensions Used
 
-* Json Web Token: eyJhbGciOiJ found in https://github.com
+### TruffleHog
 
-* AWS API Key: AKIAVCODYLSA53PQK4ZA,AKIAVCODYLSA53PQK4ZA found in https://github.com decoded from WC1BbXotQ...
+### AdBlocked
 
-* Interesting Outbound connection from laptop to --> https://viisupport.com s.viisupport.com --> To investigate ....
+### FoxyProxy
 
-```
-# nmap -sC -sV -p- -Pn viisupport.com -oN nmap/viisupport.com.nmap -T5
+### Wappalyzer
 
+### d3coder
 
-```
+### TruffleHog
+
+### DotGit
+
+### Cookie-Editor
+
